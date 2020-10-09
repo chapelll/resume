@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function drawES5Chart(options) {
+            options = options === undefined ? {} : options;  
+            var size = options.size === undefined ? 'big' : options.size;  // big
+            var cords = options.cords === undefined ? { x: 0, y: 0 } : options.cords; // 18 30
+            var radius = options.radius === undefined ? 25 : options.radius; // 30
+            console.log(size, cords, radius);
+            // now finally do some chart drawing
+        }
+
+        drawES5Chart({
+            cords: { x: 18, y: 30 },
+            radius: 30
+        });
+
+    </script>
+</body>
+
+</html>

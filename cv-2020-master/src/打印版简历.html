@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 0px;
+    }
+  </style>
+  <style>
+    body {}
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
+    }
+  </style>
+  <style media="print">
+    .skills {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>张程卓</h1>
+      <!-- <img src="https://pic3.zhimg.com/v2-272384f77b58133e1e232e47ba044f96_xl.jpg" alt="" width="100" height="100"> -->
+      <p>
+        男 | 24岁 | 前端开发工程师 | 成都
+      </p>
+      <p>
+        手机：13880445729 | 微信：chapelll | 邮箱：214426857@qq.com
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <p>
+        <span><time>2019年</time>~<time>2021年</time></span>
+        西南民族大学 农业工程与信息技术 硕士</p>
+      <p>
+        <span><time>2015年</time>~<time>2019年</time></span>
+        西南民族大学 计算机科学与技术 本科</p>
+    </section>
+
+
+    <section >
+      <h2>技术栈</h2>
+      <ul>
+        <li>熟悉<strong> HTML5 </strong>常用标签，熟悉<strong> 标签语义化 </strong>并在项目中使用过。</li>
+        <li>熟悉<strong> CSS3 </strong>包括 盒模型 / Flex / Grid等布局，使用过<strong>Scss</strong>、<strong>Stylus</strong>等预处理。</li>
+        <li>熟悉原生<strong> JavaScript </strong>语言，包括 闭包、原型链、this指针等，熟悉<strong> ES6 </strong>新特性,包括 let / promise / async /
+          class 等，学习并在项目中使用<strong> TypeScript </strong>进行编程。</li>
+        <li>熟悉<strong> Jquery </strong>、<strong> Element-UI </strong>等第三方JS库和UI框架，熟练使用<strong> Git </strong>进行代码管理。</li>
+        <li>熟悉<strong> Vue全家桶 </strong>的使用，包括 VueCli、VueRouter、Vuex 等。</li>
+        <li>了解<strong> 前后端分离技术 </strong>，包括AJAX、跨域、cookie等。了解<strong> HTTP网络 </strong>协议。</li>
+      </ul>
+      </div>
+    </section>
+
+
+
+    <section class="projects">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>橘子UI</h3>
+            <!-- <span>
+              <a target="_blank" href="https://github.com/chapelll/orangeUI">源码链接</a>
+              <a target="_blank" href="https://chapelll.github.io/orangeUI/">项目预览</a>
+            </span> -->
+          </header>
+          <p>
+            一个基于<strong> Vue </strong>、<strong>Scss</strong>、 <strong>Parcel </strong>完成的常见<strong> 前端组件库 </strong>。
+          </p>
+          <p>
+            使用了<strong> Chai </strong>+<strong> Mocha </strong>进行单元测试，并通过<strong> Travis CI </strong>进行持续集成。
+          </p>
+          <p>
+            主要实现的组件包括Button按钮、Input输入框、Grid栅格、Tabs标签栏、Layout布局、Toast弹出提示框、Collapse折叠面板等。
+          </p>
+          <p>
+            最终通过<strong> vuepress </strong>完成了官方文档，并将该组件库发布到了<strong> npmjs.org </strong>。
+          </p>
+          <p>
+            该项目让我对<strong> Vue </strong>的常用API更加熟悉，同时对单元测试及前端的<strong> 开源 </strong>文化有进一步的了解。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>蓝空记账</h3>
+            <!-- <span>
+              <a target="_blank" href="https://github.com/chapelll/morney-1">源码链接</a>
+              <a target="_blank" href="https://chapelll.github.io/morney-1-display/">项目预览</a>
+            </span> -->
+          </header>
+          <p>
+            一个基于<strong> Vue </strong>、<strong>Vue Router</strong>、 <strong> Vuex </strong>和<strong> TypeScript
+            </strong>的单页面本地简便记账应用。
+          </p>
+          <p>
+            主要实现的功能包括记账页面、标签管理、统计页面、数据持久化等。
+          </p>
+          <p>
+            开发时使用了<strong> Flex布局 </strong>和<strong> TypeScript </strong>装饰器语法，并引入了<strong> Vuex + LocalStorage
+            </strong>进行全局数据管理。
+          </p>
+          <p>
+            该项目加深了我对<strong> SPA应用 </strong>的理解，同时我将项目过程中遇到的一些问题记录到了<a target="_blank"
+              href="https://www.zhihu.com/people/zhang-cheng-zhuo-57/posts">博客</a>。
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>多人共享博客</h3>
+            <!-- <span>
+              <a target="_blank" href="https://github.com/chapelll/blog-client-1">源码链接</a>
+              <a target="_blank" href="https://chapelll.github.io/vue-blog-preview/">项目预览</a>
+            </span> -->
+          </header>
+          <p>
+            使用 <strong> Vue全家桶 + JavaScript </strong>完成的多人共享博客项目。
+          </p>
+          <p>
+            具有首页、博客详情、用户等页面，以及登陆注册、博客发表编辑等功能。
+          </p>
+          <p>
+            开发时主要使用<strong> Grid 布局 </strong>，通过<strong> axios </strong>从后端拿到数据进行渲染。
+          </p>
+          <p>
+            该项目使用了<strong> 前后端分离 </strong>的开发模式，主要使用接口来进行前后端数据的交互。
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="openSource page2" >
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>手写 DOM 库</h3>
+            <!-- <a target="_blank" href="https://github.com/chapelll/dom.js---2">源码链接</a> -->
+          </header>
+          <p>我在学习DOM API 时完成的简易类Jquery库。</p>
+          <p>实现了元素选择、元素创建、元素删除、元素查找、事件监听等操作DOM功能。</p>
+        </li>
+
+        <!-- <li class="page2"> -->
+        <li>
+          <header>
+            <h3>动态绘制皮卡丘</h3>
+            <!-- <span>
+              <a target="_blank" href="https://github.com/chapelll/pikaqiu-1">源码链接</a>
+              <a target="_blank" href="https://chapelll.github.io/pikaqiu-1/">项目预览</a>
+            </span> -->
+          </header>
+          <p>基于原生JavaScript和CSS完成的一个可爱小作品。</p>
+          <p>利用JS动态地写入CSS，模拟从零到一画出皮卡丘的过程。</p>
+        </li>
+  
+      </ul>
+    </section>
+
+    <section  >
+      <h2>校园经历</h2>
+      <ul>
+        <li> ○ 在本学院担任学生干部，获得过<strong> 优秀学生干部 </strong>评比。</li>
+        <li> ○ 研究生期间获得一次<strong> 一等奖学金 </strong>及一次二等奖学金。</li>
+        <li> ○ 通过英语 CET-4。</li>
+      </ul>
+    </section>
+
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><strong> 代码仓库 </strong>： https://github.com/chapelll</li>
+        <li><strong> 博客链接 </strong>： www.zhihu.com/people/zhang-cheng-zhuo-57/posts</li>
+      </ul>
+    </section>
+
+    <section class="others">
+      <h2>自我评价</h2>
+      <ul>
+        <li>1、待人真诚友善，适应能力较强。</li> 
+        <li>2、工作刻苦认真，喜欢记录遇到的问题并进行总结。</li>
+        <li>3、乐于求知，喜欢浏览博客和网站，对新事物抱有强烈好奇心。</li>  
+        <li>4、热爱帮助他人，在校期间任青年志愿者服务部干事。积极参加相关志愿活动，曾帮助学校教职工进行食堂清理工作、与成都义工联合会一同收集在校学生旧衣物进行捐赠。</li> 
+      </ul>
+    </section>
+
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
